@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4612F6F11F7757F9005C2538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F6F01F7757F9005C2538 /* AppDelegate.swift */; };
-		4612F6F31F7757F9005C2538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F6F21F7757F9005C2538 /* ViewController.swift */; };
+		4612F6F31F7757F9005C2538 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F6F21F7757F9005C2538 /* CategoriesVC.swift */; };
 		4612F6F61F7757F9005C2538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4612F6F41F7757F9005C2538 /* Main.storyboard */; };
 		4612F6F81F7757F9005C2538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4612F6F71F7757F9005C2538 /* Assets.xcassets */; };
 		4612F6FB1F7757F9005C2538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4612F6F91F7757F9005C2538 /* LaunchScreen.storyboard */; };
 		4612F7061F7757F9005C2538 /* coder_swagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F7051F7757F9005C2538 /* coder_swagTests.swift */; };
 		4612F7111F7757F9005C2538 /* coder_swagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F7101F7757F9005C2538 /* coder_swagUITests.swift */; };
+		4612F7221F775B81005C2538 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F7211F775B81005C2538 /* CategoryCell.swift */; };
+		4612F7241F775D59005C2538 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F7231F775D59005C2538 /* Category.swift */; };
+		4612F7271F775E7B005C2538 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612F7261F775E7B005C2538 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		4612F6ED1F7757F9005C2538 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612F6F01F7757F9005C2538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4612F6F21F7757F9005C2538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4612F6F21F7757F9005C2538 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		4612F6F51F7757F9005C2538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4612F6F71F7757F9005C2538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4612F6FA1F7757F9005C2538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		4612F70C1F7757F9005C2538 /* coder-swagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coder-swagUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612F7101F7757F9005C2538 /* coder_swagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coder_swagUITests.swift; sourceTree = "<group>"; };
 		4612F7121F7757F9005C2538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4612F7211F775B81005C2538 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4612F7231F775D59005C2538 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4612F7261F775E7B005C2538 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		4612F6EF1F7757F9005C2538 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				4612F7251F775E6B005C2538 /* Services */,
+				4612F7201F775B43005C2538 /* View */,
+				4612F71F1F775B36005C2538 /* Model */,
+				4612F71E1F775B2F005C2538 /* Controller */,
 				4612F6F01F7757F9005C2538 /* AppDelegate.swift */,
-				4612F6F21F7757F9005C2538 /* ViewController.swift */,
 				4612F6F41F7757F9005C2538 /* Main.storyboard */,
 				4612F6F71F7757F9005C2538 /* Assets.xcassets */,
 				4612F6F91F7757F9005C2538 /* LaunchScreen.storyboard */,
@@ -123,6 +132,38 @@
 				4612F7121F7757F9005C2538 /* Info.plist */,
 			);
 			path = "coder-swagUITests";
+			sourceTree = "<group>";
+		};
+		4612F71E1F775B2F005C2538 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4612F6F21F7757F9005C2538 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4612F71F1F775B36005C2538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4612F7231F775D59005C2538 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4612F7201F775B43005C2538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4612F7211F775B81005C2538 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4612F7251F775E6B005C2538 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4612F7261F775E7B005C2538 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4612F6F31F7757F9005C2538 /* ViewController.swift in Sources */,
+				4612F6F31F7757F9005C2538 /* CategoriesVC.swift in Sources */,
 				4612F6F11F7757F9005C2538 /* AppDelegate.swift in Sources */,
+				4612F7221F775B81005C2538 /* CategoryCell.swift in Sources */,
+				4612F7241F775D59005C2538 /* Category.swift in Sources */,
+				4612F7271F775E7B005C2538 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
